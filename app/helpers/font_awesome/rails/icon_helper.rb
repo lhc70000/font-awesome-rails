@@ -36,7 +36,7 @@ module FontAwesome
         classes.concat Array(options.delete(:class))
         text = options.delete(:text)
         right_icon = options.delete(:right)
-        icon = content_tag(:i, nil, options.merge(:class => classes))
+        icon = content_tag(:span, nil, options.merge(:class => classes))
         Private.icon_join(icon, text, right_icon)
       end
 
